@@ -107,8 +107,12 @@ For the badge (grande):
 
 ## Maintainers
 
+<!--lint disable awesome-list-item-->
+
 - [@GeiserX](https://github.com/GeiserX)
 - [@goiblas](https://github.com/goiblas)
+
+<!--lint enable awesome-list-item-->
 
 ## Contribuir
 
