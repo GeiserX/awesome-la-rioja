@@ -105,6 +105,11 @@ For the badge (grande):
 [![listed on awesome-la-rioja](https://img.shields.io/badge/listed%20on-awesome--la--rioja-FFD700?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAxNCI+PGcgZmlsbD0iI0ZGRDcwMCI+PHJlY3QgeD0iNiIgeT0iMCIgd2lkdGg9IjIiIGhlaWdodD0iMyIvPjxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI4IiB5PSIyIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iMyIgeT0iNCIgd2lkdGg9IjMiIGhlaWdodD0iMyIvPjxyZWN0IHg9IjgiIHk9IjQiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSI1IiB5PSI3IiB3aWR0aD0iNCIgaGVpZ2h0PSIzIi8+PHJlY3QgeD0iMiIgeT0iNyIgd2lkdGg9IjMiIGhlaWdodD0iMyIvPjxyZWN0IHg9IjkiIHk9IjciIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSI0IiB5PSIxMCIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjUiIHk9IjEyIiB3aWR0aD0iNCIgaGVpZ2h0PSIyIi8+PC9nPjwvc3ZnPg==&labelColor=CC0000)](https://github.com/GeiserX/awesome-la-rioja#readme)
 ```
 
+## Maintainers
+
+- [@GeiserX](https://github.com/GeiserX)
+- [@goiblas](https://github.com/goiblas)
+
 ## Contribuir
 
 Las contribuciones bienvenidas. Lee las [directrices de contribución](contributing.md) antes de enviar un pull request.
