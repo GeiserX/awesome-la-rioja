@@ -1,28 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
-  <!-- La Rioja: Red (#CC0000), White (#FFFFFF), Green (#00703C) -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 200" width="800" height="200">
+  <!-- Oak barrels stacked on their sides in a stone bodega cellar, heads facing out -->
   <defs>
-    <clipPath id="r"><rect width="800" height="200" rx="16"/></clipPath>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="100%" stop-color="#14141f"/>
+    <clipPath id="d-clip"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="d-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14100f"/><stop offset="1" stop-color="#0a0a0f"/>
     </linearGradient>
-    <filter id="b1"><feGaussianBlur stdDeviation="40"/></filter>
-  </defs>
-  <g clip-path="url(#r)">
-    <rect width="800" height="200" fill="url(#bg)"/>
-    <ellipse cx="150" cy="180" rx="200" ry="120" fill="#CC0000" opacity="0.15" filter="url(#b1)"/>
-    <ellipse cx="650" cy="20" rx="200" ry="120" fill="#00703C" opacity="0.1" filter="url(#b1)"/>
-    <rect width="800" height="2" fill="#CC0000" opacity="0.6"/>
-    <text x="400" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" fill="#fff" font-weight="700" letter-spacing="1">awesome-la-rioja</text>
-    <rect x="310" y="86" width="180" height="2" rx="1" fill="#CC0000" opacity="0.5"/>
-    <text x="400" y="116" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="rgba(255,255,255,0.5)" font-weight="300" letter-spacing="3">SOFTWARE OPEN SOURCE PARA LA RIOJA</text>
-    <!-- Grape cluster: stylized grape shapes representing La Rioja wine heritage -->
-    <g fill="#00703C" opacity="0.4" transform="translate(400,158)">
-      <circle cx="-12" cy="-4" r="4"/><circle cx="-4" cy="-4" r="4"/><circle cx="4" cy="-4" r="4"/><circle cx="12" cy="-4" r="4"/>
-      <circle cx="-8" cy="4" r="4"/><circle cx="0" cy="4" r="4"/><circle cx="8" cy="4" r="4"/>
-      <circle cx="-4" cy="12" r="4"/><circle cx="4" cy="12" r="4"/>
-      <circle cx="0" cy="20" r="4"/>
-      <rect x="-1" y="-14" width="2" height="8" rx="1" fill="#00703C" opacity="0.5"/>
-      <ellipse cx="6" cy="-14" rx="5" ry="3" fill="#00703C" opacity="0.3" transform="rotate(-20,6,-14)"/>
+    <radialGradient id="d-belly" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#6e1a26"/><stop offset="0.8" stop-color="#4a1018"/><stop offset="1" stop-color="#26080e"/>
+    </radialGradient>
+    <radialGradient id="d-oak" cx="0.42" cy="0.36" r="0.75">
+      <stop offset="0" stop-color="#d9a86a"/><stop offset="0.6" stop-color="#b07a42"/><stop offset="1" stop-color="#7a4f28"/>
+    </radialGradient>
+    <linearGradient id="d-hoop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6b6a70"/><stop offset="0.5" stop-color="#2c2b31"/><stop offset="1" stop-color="#151418"/>
+    </linearGradient>
+    <clipPath id="d-head"><circle r="25"/></clipPath>
+    <g id="d-barrel">
+      <circle r="33" fill="url(#d-belly)"/>
+      <circle r="30.5" fill="url(#d-hoop)"/>
+      <circle r="28.6" fill="#6b4322"/>
+      <circle r="28.6" fill="none" stroke="#3e2410" stroke-width="0.6" stroke-dasharray="1 4.6"/>
+      <circle r="26.8" fill="#2a1608"/>
+      <circle r="25" fill="url(#d-oak)"/>
+      <g clip-path="url(#d-head)" stroke="#6a4220" stroke-width="0.9" opacity="0.75">
+        <path d="M-15,-27V27M-5,-27V27M5,-27V27M15,-27V27"/>
+      </g>
+      <g clip-path="url(#d-head)" fill="#ffffff" opacity="0.06">
+        <rect x="-5" y="-27" width="10" height="54"/><rect x="15" y="-27" width="12" height="54"/>
+      </g>
+      <circle r="25" fill="none" stroke="#3a2210" stroke-width="1.4"/>
+      <circle cx="0" cy="16" r="2.2" fill="#2c190b"/>
     </g>
+    <radialGradient id="d-oak2" cx="0.42" cy="0.36" r="0.75">
+      <stop offset="0" stop-color="#c18e55"/><stop offset="0.6" stop-color="#94622f"/><stop offset="1" stop-color="#5e3b1c"/>
+    </radialGradient>
+    <g id="d-barrel2">
+      <use xlink:href="#d-barrel" href="#d-barrel"/>
+      <circle r="24.3" fill="url(#d-oak2)" opacity="0.85"/>
+      <g clip-path="url(#d-head)" stroke="#4e2f15" stroke-width="0.9" opacity="0.7">
+        <path d="M-15,-27V27M-5,-27V27M5,-27V27M15,-27V27"/>
+      </g>
+      <circle cx="0" cy="16" r="2.2" fill="#22130a"/>
+    </g>
+    <radialGradient id="d-light" cx="0.5" cy="0.45" r="0.65">
+      <stop offset="0" stop-color="#0a0a0f" stop-opacity="0.93"/>
+      <stop offset="0.45" stop-color="#0a0a0f" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#0a0a0f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="d-lamp" cx="0.5" cy="0" r="0.8">
+      <stop offset="0" stop-color="#ffb65c" stop-opacity="0.22"/><stop offset="1" stop-color="#ffb65c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g clip-path="url(#d-clip)">
+    <rect width="800" height="200" fill="url(#d-bg)"/>
+    <rect width="800" height="200" fill="url(#d-lamp)"/>
+    <!-- barrels, three rows stacked -->
+    <g>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="34" y="166"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="102" y="166"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="170" y="166"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="238" y="166"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="306" y="166"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="374" y="166"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="442" y="166"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="510" y="166"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="578" y="166"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="646" y="166"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="714" y="166"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="782" y="166"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="0" y="107"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="68" y="107"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="136" y="107"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="204" y="107"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="272" y="107"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="340" y="107"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="408" y="107"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="476" y="107"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="544" y="107"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="612" y="107"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="680" y="107"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="748" y="107"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="816" y="107"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="34" y="48"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="102" y="48"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="170" y="48"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="238" y="48"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="306" y="48"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="374" y="48"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="442" y="48"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="510" y="48"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="578" y="48"/>
+      <use xlink:href="#d-barrel2" href="#d-barrel2" x="646" y="48"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="714" y="48"/>
+      <use xlink:href="#d-barrel" href="#d-barrel" x="782" y="48"/>
+    </g>
+    <rect width="800" height="200" fill="url(#d-light)"/>
+    <text x="400" y="96" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="0.5">awesome-la-rioja</text>
+    <rect x="330" y="112" width="140" height="2" rx="1" fill="#b3263a"/>
+    <text x="400" y="138" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#ffffff" fill-opacity="0.72" letter-spacing="2.8">SOFTWARE OPEN SOURCE PARA LA RIOJA</text>
   </g>
 </svg>
