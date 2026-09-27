@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <!-- Logroño at dusk: Puente de Piedra over the Ebro, twin towers of La Redonda, spire of Santa María de Palacio -->
+  <defs>
+    <clipPath id="a-clip"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="a-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0a0f"/>
+      <stop offset="0.55" stop-color="#14141f"/>
+      <stop offset="0.8" stop-color="#3a2230"/>
+      <stop offset="1" stop-color="#6b3a2c"/>
+    </linearGradient>
+    <linearGradient id="a-river" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1620"/>
+      <stop offset="1" stop-color="#0a0a0f"/>
+    </linearGradient>
+    <filter id="a-blur" filterUnits="userSpaceOnUse" x="-200" y="-200" width="1200" height="600"><feGaussianBlur stdDeviation="30"/></filter>
+    <filter id="a-soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <linearGradient id="a-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1c24"/><stop offset="1" stop-color="#0c0a10"/></linearGradient>
+  </defs>
+  <g clip-path="url(#a-clip)">
+    <rect width="800" height="200" fill="url(#a-sky)"/>
+    <ellipse cx="400" cy="165" rx="360" ry="40" fill="#e0913f" opacity="0.28" filter="url(#a-blur)"/>
+    <ellipse cx="110" cy="100" rx="60" ry="60" fill="#e0913f" opacity="0.1" filter="url(#a-blur)"/>
+    <ellipse cx="668" cy="110" rx="110" ry="60" fill="#e0913f" opacity="0.16" filter="url(#a-blur)"/>
+
+    <!-- skyline -->
+    <g fill="#241b26">
+      <!-- low roofs -->
+      <path d="M0 150 L0 138 L30 138 L30 132 L62 132 L62 140 L150 140 L150 134 L196 134 L196 142 L250 142 L250 136 L300 136 L300 144 L500 144 L500 138 L560 138 L560 132 L600 132 L600 150 Z"/>
+      <path d="M740 150 L740 134 L770 134 L770 140 L800 140 L800 150 Z"/>
+      <!-- Santa María de Palacio: tower base and octagonal pyramid spire -->
+      <rect x="92" y="112" width="34" height="38"/>
+      <rect x="89" y="108" width="40" height="5"/>
+      <path d="M92 108 L109 22 L126 108 Z"/>
+      <path d="M108 22 L110 22 L109.6 12 L108.4 12 Z"/>
+      <path d="M60 150 L60 128 L96 118 L96 150 Z"/>
+      <path d="M126 150 L126 122 L170 130 L170 150 Z"/>
+      <!-- La Redonda: nave behind the facade -->
+      <path d="M598 150 L598 118 L720 112 L742 118 L742 150 Z"/>
+      <!-- La Redonda: retablo portal between the towers -->
+      <path d="M634 150 L634 100 L706 100 L706 150 Z"/><path d="M660 100 L670 92 L680 100 Z"/>
+      <!-- La Redonda: left tower -->
+      <g>
+        <rect x="614" y="84" width="28" height="66"/>
+        <rect x="611" y="80" width="34" height="5"/>
+        <rect x="617" y="60" width="22" height="21"/>
+        <rect x="614" y="57" width="28" height="4"/>
+        <rect x="620" y="44" width="16" height="14"/>
+        <path d="M618 45 Q628 26 638 45 Z"/>
+        <rect x="625" y="26" width="6" height="8"/>
+        <path d="M624 27 Q628 19 632 27 Z"/>
+        <rect x="627.4" y="11" width="1.2" height="10"/>
+        <rect x="624.8" y="14" width="6.4" height="1.2"/>
+      </g>
+      <g transform="translate(84 0)">
+        <rect x="614" y="84" width="28" height="66"/>
+        <rect x="611" y="80" width="34" height="5"/>
+        <rect x="617" y="60" width="22" height="21"/>
+        <rect x="614" y="57" width="28" height="4"/>
+        <rect x="620" y="44" width="16" height="14"/>
+        <path d="M618 45 Q628 26 638 45 Z"/>
+        <rect x="625" y="26" width="6" height="8"/>
+        <path d="M624 27 Q628 19 632 27 Z"/>
+        <rect x="627.4" y="11" width="1.2" height="10"/>
+        <rect x="624.8" y="14" width="6.4" height="1.2"/>
+      </g>
+    </g>
+    <path d="M650 150 L650 122 A20 20 0 0 1 690 122 L690 150 Z" fill="#150f18"/>
+    <!-- belfry openings catching the last light -->
+    <g fill="#e0913f" opacity="0.55">
+      <path d="M623 80 L623 70 Q628 64 633 70 L633 80 Z"/>
+      <path d="M707 80 L707 70 Q712 64 717 70 L717 80 Z"/>
+      <path d="M625 57 L625 50 Q628 46 631 50 L631 57 Z"/>
+      <path d="M709 57 L709 50 Q712 46 715 50 L715 57 Z"/>
+      <rect x="106" y="120" width="6" height="10" rx="3"/>
+    </g>
+
+    <!-- Ebro -->
+    <rect x="0" y="178" width="800" height="22" fill="url(#a-water)"/>
+    <!-- Puente de Piedra: seven arches -->
+    <path fill="#07060a" d="M0 146 L800 146 L800 186 L748 186 L748 174 A38 17 0 0 0 672 174 L672 186 L656 186 L656 174 A42 19 0 0 0 572 174 L572 186 L556 186 L556 174 A46 21 0 0 0 464 174 L464 186 L448 186 L448 174 A48 23 0 0 0 352 174 L352 186 L336 186 L336 174 A46 21 0 0 0 244 174 L244 186 L228 186 L228 174 A42 19 0 0 0 144 174 L144 186 L128 186 L128 174 A38 17 0 0 0 52 174 L52 186 L0 186 Z"/>
+    <g fill="#07060a"><path d="M125 186 L125 170 L136 162 L147 170 L147 186 Z"/><path d="M225 186 L225 170 L236 162 L247 170 L247 186 Z"/><path d="M333 186 L333 170 L344 162 L355 170 L355 186 Z"/><path d="M445 186 L445 170 L456 162 L467 170 L467 186 Z"/><path d="M553 186 L553 170 L564 162 L575 170 L575 186 Z"/><path d="M653 186 L653 170 L664 162 L675 170 L675 186 Z"/></g>
+    <rect x="0" y="143" width="800" height="3" fill="#07060a"/>
+    <g fill="none" stroke="#2e2229" stroke-width="1.2"><path d="M47 174 A43 22 0 0 1 133 174"/><path d="M139 174 A47 24 0 0 1 233 174"/><path d="M239 174 A51 26 0 0 1 341 174"/><path d="M347 174 A53 28 0 0 1 453 174"/><path d="M459 174 A51 26 0 0 1 561 174"/><path d="M567 174 A47 24 0 0 1 661 174"/><path d="M667 174 A43 22 0 0 1 753 174"/><path d="M0 149.5 L800 149.5"/></g>
+    <path d="M109 24 L109 108" stroke="#3a2c38" stroke-width="1"/>
+    <g fill="#f2b765"><circle cx="40" cy="141" r="1.6"/><circle cx="136" cy="141" r="1.6"/><circle cx="236" cy="141" r="1.6"/><circle cx="344" cy="141" r="1.6"/><circle cx="456" cy="141" r="1.6"/><circle cx="564" cy="141" r="1.6"/><circle cx="664" cy="141" r="1.6"/><circle cx="760" cy="141" r="1.6"/></g>
+    <g fill="#f2b765" opacity="0.2" filter="url(#a-soft)"><circle cx="40" cy="141" r="5"/><circle cx="136" cy="141" r="5"/><circle cx="236" cy="141" r="5"/><circle cx="344" cy="141" r="5"/><circle cx="456" cy="141" r="5"/><circle cx="564" cy="141" r="5"/><circle cx="664" cy="141" r="5"/><circle cx="760" cy="141" r="5"/></g>
+    <g fill="none" stroke="#e0913f" stroke-width="1" opacity="0.12"><path d="M52 186 A38 10.2 0 0 0 128 186" /><path d="M144 186 A42 11.4 0 0 0 228 186" /><path d="M244 186 A46 12.6 0 0 0 336 186" /><path d="M352 186 A48 13.8 0 0 0 448 186" /><path d="M464 186 A46 12.6 0 0 0 556 186" /><path d="M572 186 A42 11.4 0 0 0 656 186" /><path d="M672 186 A38 10.2 0 0 0 748 186" /></g>
+    <g stroke="#e0913f" stroke-linecap="round" stroke-width="1" opacity="0.35"><path d="M76 191 L104 191"/><path d="M82 196 L100 196"/><path d="M172 191 L200 191"/><path d="M178 196 L196 196"/><path d="M276 191 L304 191"/><path d="M282 196 L300 196"/><path d="M386 191 L414 191"/><path d="M392 196 L410 196"/><path d="M496 191 L524 191"/><path d="M502 196 L520 196"/><path d="M600 191 L628 191"/><path d="M606 196 L624 196"/><path d="M696 191 L724 191"/><path d="M702 196 L720 196"/></g>
+
+    <text x="400" y="72" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#ffffff" letter-spacing="1">awesome-la-rioja</text>
+    <rect x="330" y="86" width="140" height="2" rx="1" fill="#e0913f" opacity="0.7"/>
+    <text x="400" y="112" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#ffffff" fill-opacity="0.62" letter-spacing="3">SOFTWARE OPEN SOURCE PARA LA RIOJA</text>
+  </g>
+</svg>
