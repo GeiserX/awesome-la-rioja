@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="media/banner.svg" alt="Awesome La Rioja">
+  <img src="docs/images/banner.svg" alt="Awesome La Rioja">
   <br><br>
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
   <br><br>
@@ -21,7 +21,7 @@
 
 <!--lint enable awesome-list-item-->
 
-**Leyenda:** Cada entrada muestra: ![Stars](https://img.shields.io/badge/%E2%AD%90-grey?style=flat-square) estrellas, ![Last Commit](https://img.shields.io/badge/commit-grey?style=flat-square) actividad, ![Language](https://img.shields.io/badge/lang-grey?style=flat-square) lenguaje, ![License](https://img.shields.io/badge/license-grey?style=flat-square) licencia, [![GobRioja](https://img.shields.io/badge/GobRioja-CC0000?style=flat-square)](https://www.larioja.org/) etiqueta de institución/ubicación, ([Demo](https://github.com/GeiserX/awesome-la-rioja)) demo en vivo. Todas las insignias son clicables y se actualizan automáticamente. Las etiquetas enlazan a las páginas oficiales de cada institución.
+> Las insignias muestran: ⭐ estrellas, último commit, lenguaje principal y licencia. Las etiquetas de color enlazan a la página oficial de cada institución o servicio.
 
 ## Cartografía y Geodatos
 
@@ -45,8 +45,8 @@
 
 ## Datos Abiertos
 
-- [ODS Data La Rioja](https://github.com/ods-larioja/ods-data-larioja-staging) [![Stars](https://img.shields.io/github/stars/ods-larioja/ods-data-larioja-staging?style=flat-square&label=%E2%AD%90)](https://github.com/ods-larioja/ods-data-larioja-staging/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/ods-larioja/ods-data-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-data-larioja-staging/commits/develop) [![Language](https://img.shields.io/github/languages/top/ods-larioja/ods-data-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-data-larioja-staging) [![License](https://img.shields.io/github/license/ods-larioja/ods-data-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-data-larioja-staging/blob/develop/LICENSE) [![GobRioja](https://img.shields.io/badge/GobRioja-CC0000?style=flat-square)](https://www.larioja.org/) [![ODS](https://img.shields.io/badge/ODS-CC0000?style=flat-square)](https://ods.larioja.org/) - Repositorio de datos de los Objetivos de Desarrollo Sostenible de La Rioja.
-- [ODS La Rioja](https://github.com/ods-larioja/ods-larioja-staging) [![Stars](https://img.shields.io/github/stars/ods-larioja/ods-larioja-staging?style=flat-square&label=%E2%AD%90)](https://github.com/ods-larioja/ods-larioja-staging/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/ods-larioja/ods-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-larioja-staging/commits/develop) [![Language](https://img.shields.io/github/languages/top/ods-larioja/ods-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-larioja-staging) [![License](https://img.shields.io/github/license/ods-larioja/ods-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-larioja-staging/blob/develop/LICENSE) [![GobRioja](https://img.shields.io/badge/GobRioja-CC0000?style=flat-square)](https://www.larioja.org/) [![ODS](https://img.shields.io/badge/ODS-CC0000?style=flat-square)](https://ods.larioja.org/) - Sitio web de seguimiento de los Objetivos de Desarrollo Sostenible de La Rioja.
+- [ODS Data La Rioja](https://github.com/ods-larioja/ods-data-larioja-staging) [![Stars](https://img.shields.io/github/stars/ods-larioja/ods-data-larioja-staging?style=flat-square&label=%E2%AD%90)](https://github.com/ods-larioja/ods-data-larioja-staging/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/ods-larioja/ods-data-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-data-larioja-staging/commits/develop) [![Language](https://img.shields.io/github/languages/top/ods-larioja/ods-data-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-data-larioja-staging) [![License](https://img.shields.io/github/license/ods-larioja/ods-data-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-data-larioja-staging/blob/develop/LICENSE) [![GobRioja](https://img.shields.io/badge/GobRioja-CC0000?style=flat-square)](https://www.larioja.org/) [![ODS](https://img.shields.io/badge/ODS-CC0000?style=flat-square)](https://www.larioja.org/estadistica/es/objetivos-desarrollo-sostenible-rioja) - Repositorio de datos de los Objetivos de Desarrollo Sostenible de La Rioja.
+- [ODS La Rioja](https://github.com/ods-larioja/ods-larioja-staging) [![Stars](https://img.shields.io/github/stars/ods-larioja/ods-larioja-staging?style=flat-square&label=%E2%AD%90)](https://github.com/ods-larioja/ods-larioja-staging/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/ods-larioja/ods-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-larioja-staging/commits/develop) [![Language](https://img.shields.io/github/languages/top/ods-larioja/ods-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-larioja-staging) [![License](https://img.shields.io/github/license/ods-larioja/ods-larioja-staging?style=flat-square)](https://github.com/ods-larioja/ods-larioja-staging/blob/develop/LICENSE) [![GobRioja](https://img.shields.io/badge/GobRioja-CC0000?style=flat-square)](https://www.larioja.org/) [![ODS](https://img.shields.io/badge/ODS-CC0000?style=flat-square)](https://www.larioja.org/estadistica/es/objetivos-desarrollo-sostenible-rioja) - Sitio web de seguimiento de los Objetivos de Desarrollo Sostenible de La Rioja.
 - [open-data-la-rioja](https://github.com/goiblas/open-data-la-rioja) [![Stars](https://img.shields.io/github/stars/goiblas/open-data-la-rioja?style=flat-square&label=%E2%AD%90)](https://github.com/goiblas/open-data-la-rioja/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/goiblas/open-data-la-rioja?style=flat-square)](https://github.com/goiblas/open-data-la-rioja/commits/main) [![Language](https://img.shields.io/github/languages/top/goiblas/open-data-la-rioja?style=flat-square)](https://github.com/goiblas/open-data-la-rioja) [![License](https://img.shields.io/github/license/goiblas/open-data-la-rioja?style=flat-square)](https://github.com/goiblas/open-data-la-rioja/blob/main/LICENSE) [![GobRioja](https://img.shields.io/badge/GobRioja-CC0000?style=flat-square)](https://www.larioja.org/) - Visualización de datos abiertos del Gobierno de La Rioja.
 
 ## Meteorología e IoT
@@ -100,7 +100,7 @@ For the badge (grande):
 [![listed on awesome-la-rioja](https://img.shields.io/badge/listed%20on-awesome--la--rioja-FFD700?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCAxNCI+PGcgZmlsbD0iI0ZGRDcwMCI+PHJlY3QgeD0iNiIgeT0iMCIgd2lkdGg9IjIiIGhlaWdodD0iMyIvPjxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI4IiB5PSIyIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iMyIgeT0iNCIgd2lkdGg9IjMiIGhlaWdodD0iMyIvPjxyZWN0IHg9IjgiIHk9IjQiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSI1IiB5PSI3IiB3aWR0aD0iNCIgaGVpZ2h0PSIzIi8+PHJlY3QgeD0iMiIgeT0iNyIgd2lkdGg9IjMiIGhlaWdodD0iMyIvPjxyZWN0IHg9IjkiIHk9IjciIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSI0IiB5PSIxMCIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjUiIHk9IjEyIiB3aWR0aD0iNCIgaGVpZ2h0PSIyIi8+PC9nPjwvc3ZnPg==&labelColor=CC0000)](https://github.com/GeiserX/awesome-la-rioja#readme)
 ```
 
-## Maintainers
+## Mantenedores
 
 <!--lint disable awesome-list-item-->
 
@@ -111,7 +111,7 @@ For the badge (grande):
 
 ## Contribuir
 
-Las contribuciones bienvenidas. Lee las [directrices de contribución](contributing.md) antes de enviar un pull request.
+Las contribuciones son bienvenidas. Lee las [directrices de contribución](contributing.md) antes de enviar un pull request.
 
 ## Nota
 
