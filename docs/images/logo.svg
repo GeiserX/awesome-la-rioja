@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-34 -34 68 68" width="68" height="68" role="img" aria-label="Awesome La Rioja">
+  <!-- One barrel head from docs/images/banner.svg (the d-barrel group): the wine
+       stained belly, the iron hoop (d-hoop), the chime, the oak head (d-oak) with
+       its four stave joints and the bung, same coordinates and colours. Dropped:
+       the cellar sky, the lamp glow and the dashed nail ring on the chime (its 0.6
+       unit dashes vanish at header size). The 0.9 stave joints are 2 units wide and
+       the 1.4 head outline is 2. Ids carry an aw- prefix. -->
+  <defs>
+    <radialGradient id="aw-logo-belly" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#6e1a26"/><stop offset="0.8" stop-color="#4a1018"/><stop offset="1" stop-color="#26080e"/>
+    </radialGradient>
+    <radialGradient id="aw-logo-oak" cx="0.42" cy="0.36" r="0.75">
+      <stop offset="0" stop-color="#d9a86a"/><stop offset="0.6" stop-color="#b07a42"/><stop offset="1" stop-color="#7a4f28"/>
+    </radialGradient>
+    <linearGradient id="aw-logo-hoop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6b6a70"/><stop offset="0.5" stop-color="#2c2b31"/><stop offset="1" stop-color="#151418"/>
+    </linearGradient>
+    <clipPath id="aw-logo-head"><circle r="25"/></clipPath>
+  </defs>
+  <circle r="33" fill="url(#aw-logo-belly)"/>
+  <circle r="30.5" fill="url(#aw-logo-hoop)"/>
+  <circle r="28.6" fill="#6b4322"/>
+  <circle r="26.8" fill="#2a1608"/>
+  <circle r="25" fill="url(#aw-logo-oak)"/>
+  <g clip-path="url(#aw-logo-head)" stroke="#6a4220" stroke-width="2" opacity="0.75">
+    <path d="M-15,-27V27M-5,-27V27M5,-27V27M15,-27V27"/>
+  </g>
+  <g clip-path="url(#aw-logo-head)" fill="#ffffff" opacity="0.06">
+    <rect x="-5" y="-27" width="10" height="54"/><rect x="15" y="-27" width="12" height="54"/>
+  </g>
+  <circle r="25" fill="none" stroke="#3a2210" stroke-width="2"/>
+  <circle cx="0" cy="16" r="2.2" fill="#2c190b"/>
+</svg>
