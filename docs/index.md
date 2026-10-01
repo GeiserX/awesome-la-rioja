@@ -27,13 +27,13 @@ hide:
 
     ---
 
-    De Cartografía y Geodatos a Viticultura y Enología, pasando por IDERioja, GobRioja, Logroño. El índice lateral sigue la categoría que estás leyendo.
+    De Cartografía y Geodatos a Viticultura y Enología, pasando por IDERioja, Gobierno de La Rioja, Logroño. El índice lateral sigue la categoría que estás leyendo.
 
 -   :material-magnify: **[Buscar un proyecto](https://geiserx.github.io/awesome-la-rioja/?q=IDERioja)**
 
     ---
 
-    Pulsa `/` y escribe lo que necesitas: IDERioja, GobRioja, Logroño. La búsqueda cubre el nombre y la descripción de todas las entradas.
+    Pulsa `/` y escribe lo que necesitas: IDERioja, Gobierno de La Rioja, Logroño. La búsqueda cubre el nombre y la descripción de todas las entradas.
 
 -   :material-plus-box-outline: **[Proponer un proyecto](https://github.com/GeiserX/awesome-la-rioja/issues/new?template=anadir-proyecto.md)**
 
