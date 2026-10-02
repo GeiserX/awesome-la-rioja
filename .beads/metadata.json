@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "rioja",
+  "project_id": "e888a302-c99c-45da-ba88-b16897b41846"
+}
