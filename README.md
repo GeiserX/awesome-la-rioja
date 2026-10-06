@@ -15,6 +15,7 @@
 - [Zz prueba 200](https://github.com/GeiserX/awesome-la-rioja) - Enlace vivo.
 - [Zz prueba 403](https://httpbin.org/status/403) - Bloqueo de bot.
 - [Zz prueba 429](https://httpbin.org/status/429) - Límite de peticiones.
+- [Zz prueba 503](https://httpbin.org/status/503) - Caído.
 - [Cartografía y Geodatos](#cartografía-y-geodatos)
 - [Comunidades Tecnológicas](#comunidades-tecnológicas)
 - [Datos Abiertos](#datos-abiertos)
