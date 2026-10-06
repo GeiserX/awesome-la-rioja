@@ -22,27 +22,39 @@ jobs:
     permissions:
       contents: read
       issues: write
+    env:
+      # Same rules as links-changed.yml: 403 and 429 pass, anything else that
+      # is not a 2xx fails. lychee never caches a failure, so the cache only
+      # ever skips links that already passed.
+      LYCHEE_ARGS: >-
+        --no-progress --insecure --timeout 30
+        --max-retries 3 --retry-wait-time 5
+        --accept '200..=299,403,429'
+        --cache --max-cache-age 1d
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      # lychee never caches a failure, so a rerun on the same day skips only
-      # the links that already passed.
       - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: .lycheecache
           key: lychee-${{ github.run_id }}
           restore-keys: lychee-
-      - id: lychee
+      - id: first
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
-          args: >-
-            --no-progress --insecure --timeout 30
-            --max-retries 3 --retry-wait-time 5
-            --accept '200..=299,403,429'
-            --cache --max-cache-age 1d
-            README.md
-          output: lychee/out.md
+          args: ${{ env.LYCHEE_ARGS }} README.md
+          fail: false
+      # lychee retries timeouts and 429s on its own but not a 5xx or a refused
+      # connection. So the links that failed get a second pass five minutes
+      # later; the cache skips every link that already passed.
+      - if: steps.first.outputs.exit_code == '2'
+        run: sleep 300
+      - id: second
+        if: steps.first.outputs.exit_code == '2'
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: ${{ env.LYCHEE_ARGS }} README.md
           fail: false
       - if: always()
         uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
@@ -52,7 +64,7 @@ jobs:
       - name: Open, update or close the "Dead links" issue
         env:
           GH_TOKEN: ${{ github.token }}
-          EXIT_CODE: ${{ steps.lychee.outputs.exit_code }}
+          EXIT_CODE: ${{ steps.second.outputs.exit_code || steps.first.outputs.exit_code }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           title="Dead links"
@@ -67,7 +79,7 @@ jobs:
               ;;
             2)
               {
-                echo "The weekly link check found links that still fail after three retries."
+                echo "The weekly link check found links that still fail on a second pass five minutes after the first."
                 echo "Fix or remove them; this issue closes itself on the next clean run."
                 echo
                 echo "Run: $RUN_URL"
