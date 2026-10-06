@@ -69,7 +69,7 @@ jobs:
         run: |
           title="Dead links"
           number=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --limit 200 \
-            --json number,title --jq "map(select(.title == \"$title\"))[0].number // empty")
+            --search "\"$title\" in:title" --json number,title --jq "map(select(.title == \"$title\"))[0].number // empty")
           case "$EXIT_CODE" in
             0)
               if [ -n "$number" ]; then
@@ -84,7 +84,7 @@ jobs:
                 echo
                 echo "Run: $RUN_URL"
                 echo
-                head -c 60000 lychee/out.md
+                head -c 60000 lychee/out.md 2>/dev/null || echo "lychee wrote no report; see the run log."
               } > body.md
               if [ -z "$number" ]; then
                 gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file body.md
