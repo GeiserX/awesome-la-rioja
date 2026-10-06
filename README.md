@@ -12,8 +12,9 @@
 
 <!--lint disable awesome-list-item-->
 
-- [Zz prueba DNS](https://geiserx-dead-link-zz9q.com/x) - Enlace muerto de prueba.
-- [Zz prueba 404](https://github.com/GeiserX/this-repo-does-not-exist-zz9q) - Enlace muerto de prueba.
+- [Zz prueba 200](https://github.com/GeiserX/awesome-la-rioja) - Enlace vivo.
+- [Zz prueba 403](https://httpbin.org/status/403) - Bloqueo de bot.
+- [Zz prueba 429](https://httpbin.org/status/429) - Límite de peticiones.
 - [Cartografía y Geodatos](#cartografía-y-geodatos)
 - [Comunidades Tecnológicas](#comunidades-tecnológicas)
 - [Datos Abiertos](#datos-abiertos)
