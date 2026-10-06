@@ -12,6 +12,8 @@
 
 <!--lint disable awesome-list-item-->
 
+- [Zz prueba DNS](https://geiserx-dead-link-zz9q.com/x) - Enlace muerto de prueba.
+- [Zz prueba 404](https://github.com/GeiserX/this-repo-does-not-exist-zz9q) - Enlace muerto de prueba.
 - [Cartografía y Geodatos](#cartografía-y-geodatos)
 - [Comunidades Tecnológicas](#comunidades-tecnológicas)
 - [Datos Abiertos](#datos-abiertos)
