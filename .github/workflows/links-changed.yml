@@ -33,9 +33,14 @@ jobs:
       - name: Collect the README lines this PR adds or changes
         env:
           BASE_REF: ${{ github.base_ref }}
+        # A line the PR removes and adds back unchanged is a move (an
+        # alphabetical reorder), not a new link, so it is not checked again.
         run: |
-          git diff --unified=0 --no-color "origin/${BASE_REF}...HEAD" -- README.md \
-            | sed -n '/^+++ /d; s/^+//p' > links-changed.md
+          git diff --unified=0 --no-color "origin/${BASE_REF}...HEAD" -- README.md > readme.diff
+          LC_ALL=C comm -13 \
+            <(sed -n '/^--- /d; s/^-//p' readme.diff | LC_ALL=C sort -u) \
+            <(sed -n '/^+++ /d; s/^+//p' readme.diff | LC_ALL=C sort -u) \
+            > links-changed.md
           echo "Added or changed lines: $(wc -l < links-changed.md)"
           cat links-changed.md
       - id: first

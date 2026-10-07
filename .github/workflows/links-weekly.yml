@@ -24,8 +24,8 @@ jobs:
       issues: write
     env:
       # Same rules as links-changed.yml: 403 and 429 pass, anything else that
-      # is not a 2xx fails. lychee never caches a failure, so the cache only
-      # ever skips links that already passed.
+      # is not a 2xx fails. lychee never loads a failure from its cache, so the
+      # cache only ever skips links that already passed.
       LYCHEE_ARGS: >-
         --no-progress --insecure --timeout 30
         --max-retries 3 --retry-wait-time 5
@@ -35,11 +35,6 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: .lycheecache
-          key: lychee-${{ github.run_id }}
-          restore-keys: lychee-
       - id: first
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:
@@ -47,7 +42,9 @@ jobs:
           fail: false
       # lychee retries timeouts and 429s on its own but not a 5xx or a refused
       # connection. So the links that failed get a second pass five minutes
-      # later; the cache skips every link that already passed.
+      # later; the .lycheecache file the first pass leaves in the workspace
+      # skips every link that already passed. The file is not kept between
+      # runs: a week later every entry would be past --max-cache-age anyway.
       - if: steps.first.outputs.exit_code == '2'
         run: sleep 300
       - id: second
@@ -56,11 +53,6 @@ jobs:
         with:
           args: ${{ env.LYCHEE_ARGS }} README.md
           fail: false
-      - if: always()
-        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
-        with:
-          path: .lycheecache
-          key: lychee-${{ github.run_id }}
       - name: Open, update or close the "Dead links" issue
         env:
           GH_TOKEN: ${{ github.token }}
